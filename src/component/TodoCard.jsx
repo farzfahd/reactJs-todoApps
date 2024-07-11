@@ -3,9 +3,9 @@ import React from "react";
 export default function TodoCard(props) {
   const { children, index, delHandle: handlerDelTodos, editHandle: handlerEditTodo } = props;
   return (
-    <div>
+    <div className="todoItem">
       {children}
-      <div>
+      <div className="actionsContainer">
         <button onClick={() => handlerDelTodos(index)}>
           <i class="fa-solid fa-trash"></i>
         </button>

@@ -4,11 +4,11 @@ import TodoCard from "./TodoCard";
 export default function TodoList(props) {
   const { todos } = props;
   return (
-    <ul>
+    <ul className="main">
       {todos.map((todo, index) => {
         return (
           <TodoCard key={index} index={index} {...props}>
-            <p>{todo}</p>
+            <li>{todo}</li>
           </TodoCard>
         );
       })}
